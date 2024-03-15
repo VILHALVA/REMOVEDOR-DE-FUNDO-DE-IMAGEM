@@ -35,4 +35,8 @@ image_label = tk.Label(root, text="CAMINHO: ")
 save_button = tk.Button(root, text="SALVAR", command=remove_background_and_save, state=tk.DISABLED)
 save_button.pack(pady=10)
 
+footer_label = tk.Label(root, text="APP CRIADO PELO VILHALVA\nGITHUB: @VILHALVA", bg="gray", fg="white", height=2)
+footer_label.pack(side=tk.BOTTOM, fill=tk.X)        
+root.state('zoomed')
+
 root.mainloop()
