@@ -18,7 +18,7 @@ Este aplicativo em Tkinter é um utilitário simples para remover o fundo de uma
 5. **Interface Simples**: A interface é limpa e intuitiva, contendo apenas os elementos necessários para selecionar uma imagem e realizar a remoção do fundo.
 
 ## EXECUTANDO O PROJETO:
-1. Certifique-se de ter as biblioteca rembg instalada no seu ambiente Python. Se não tiver, você pode instalá-lar usando o pip:
+1. Certifique-se de ter a biblioteca rembg instalada no seu ambiente Python. Se não tiver, você pode instalá-lar usando o pip:
    ```bash
    pip install rembg
    ```
