@@ -30,13 +30,30 @@ Este aplicativo em Tkinter é um utilitário simples para remover o fundo de uma
 7. A imagem com o fundo removido será salva no mesmo diretório da imagem original, com o sufixo "_SEM_FUNDO.png" adicionado ao nome do arquivo.
 
 ## SOBRE O EXECUTAVEL:
+### 1. EXECUTANDO:
 - Este arquivo executável está disponível apenas para `Windows X64`. Para executá-lo, basta dar dois cliques. O executável é bastante útil caso o Python não esteja instalado. Trata-se da mesma aplicação do arquivo `CODIGO.py`. Se desejar, você pode recompilá-lo novamente; é para isso que forneci o arquivo `imagem.ico`.
+
+### 2. GERANDO:
+   **1. Instalação do [PyInstaller:](https://pyinstaller.org/en/stable/)**
+   - Certifique-se de ter o PyInstaller instalado. Se não tiver, instale usando o comando abaixo:
+   ```bash
+   pip install pyinstaller
+   ```
+
+   **2. Gerando o Executável:**
+   - Para gerar o executável, utilize o comando `pyinstaller` seguido de opções:
+      - `--icon="imagem.ico"`: Especifica o ícone do executável.
+      - `-w`: Especifica que o executável será do tipo "windowed", ou seja, sem exibir uma janela de console.
+      - `-F`: Gera um único arquivo executável em vez de vários.
+      - `CODIGO.py`: Substitua "CODIGO.py" pelo nome do seu arquivo Python principal.
+   ```bash
+   pyinstaller --icon="imagem.ico" -w -F CODIGO.py
+   ```
 
 ## NÃO SABE?
 - Entendemos que para manipular arquivos em muitas linguagens, é necessário possuir conhecimento nessas áreas. Para auxiliar nesse aprendizado, oferecemos cursos gratuitos disponíveis:
 * [CURSO DE PYTHON](https://github.com/VILHALVA/CURSO-DE-PYTHON)
 * [CURSO DE TKINTER](https://github.com/VILHALVA/CURSO-DE-TKINTER)
-* [CURSO DE EXE](https://github.com/VILHALVA/CURSO-DE-EXE)
 * [SAIBA MAIS SOBRE O "REMBR"](https://github.com/danielgatis/rembg)
 * [CONFIRA MAIS CURSOS](https://github.com/VILHALVA?tab=repositories&q=+topic:CURSO)
 
